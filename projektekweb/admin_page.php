@@ -39,7 +39,7 @@
          $select_pendings = $conn->prepare("SELECT * FROM `orders` WHERE payment_status = ?");
          $select_pendings->execute(['pending']);
          while($fetch_pendings = $select_pendings->fetch(PDO::FETCH_ASSOC)){
-            $total_pendings += number_format($fetch_pendings['total_price'], 0, ',', '.');
+            $total_pendings += $fetch_pendings['total_price'];
          };
       ?>
       <h3>Rp. <?= number_format($total_pendings, 0, ',', '.'); ?></h3>
@@ -130,17 +130,6 @@
    </div>
 
 </section>
-
-
-
-
-
-
-
-
-
-
-
 
 <script src="js/script.js"></script>
 
