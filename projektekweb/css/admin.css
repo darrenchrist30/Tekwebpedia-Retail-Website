@@ -1,0 +1,629 @@
+@import url("mystyle.css");
+
+.dashboard {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.dashboard .title {
+  font-size: 5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.dashboard .box-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.dashboard .box {
+  width: 300px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.dashboard .box h3 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.dashboard .box p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.dashboard .box .btn {
+  display: inline-block;
+  background: brown;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.dashboard .box .btn:hover {
+  background: #666;
+}
+
+.empty {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #555;
+  margin: 2rem 0;
+}
+
+.show-products {
+  margin-top: 3rem;
+}
+
+.show-products .title {
+  margin-bottom: 2rem;
+  font-size: 4rem;
+}
+
+.show-products .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.show-products .box {
+  width: 300px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.show-products .box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.show-products .box .price {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.show-products .box .name {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.show-products .box .cat {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.show-products .box .details {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.show-products .box .flex-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.show-products .box .option-btn {
+  padding: 0.5rem 1rem;
+  background: dodgerblue;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.show-products .box .option-btn:hover {
+  background: var(--black);
+}
+
+.show-products .box .delete-btn {
+  padding: 0.5rem 1rem;
+  background: brown;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.show-products .box .delete-btn:hover {
+  background: var(--black);
+}
+
+.show-products .box:hover {
+  transform: scale(1.1);
+}
+
+.add-products {
+  margin-top: 1.5rem;
+}
+
+.add-products .title {
+  margin-bottom: 2.3rem;
+  font-size: 4rem;
+}
+
+.add-products form .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.add-products form .inputBox {
+  width: 48%;
+}
+
+.add-products form .inputBox input[type="text"],
+.add-products form .inputBox input[type="number"],
+.add-products form .inputBox select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #777;
+  border-radius: 5px;
+  outline: none;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #777;
+}
+
+.add-products form .inputBox input[type="text"]:focus,
+.add-products form .inputBox input[type="number"]:focus,
+.add-products form .inputBox select:focus {
+  border: 2px solid #777;
+}
+
+.add-products form .inputBox input[type="file"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #777;
+  border-radius: 5px;
+  outline: none;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #777;
+  cursor: pointer;
+}
+
+.add-products textarea {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  font-size: 1.8rem;
+  color: var(--black);
+  border-radius: 0.5rem;
+  background-color: var(--light-bg);
+  border: var(--border);
+  margin-bottom: 1rem;
+}
+
+.add-products textarea:focus {
+  border: 2px solid #777;
+}
+
+.add-products form .btn {
+  width: 100%;
+  padding: 2rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+  background: brown;
+  cursor: pointer;
+}
+
+.add-products form .btn:hover {
+  background: var(--black);
+}
+
+.add-products form .btn:focus {
+  background: var(--black);
+}
+
+.update-product form {
+  max-width: 50rem;
+  padding: 2rem;
+  margin: 0 auto;
+  text-align: center;
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  background-color: var(--white);
+  border-radius: 0.5rem;
+}
+
+.update-product form img {
+  height: 25rem;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.update-product form .box {
+  width: 100%;
+  border: var(--border);
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  background-color: var(--light-bg);
+  padding: 1.2rem 1.4rem;
+  font-size: 1.8rem;
+  color: var(--black);
+  margin: 1rem 0;
+}
+
+.placed-orders {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.placed-orders .title {
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.placed-orders .box-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.placed-orders .box {
+  width: 700px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 2.5rem;
+  margin: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.placed-orders .box p {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.placed-orders .box p span {
+  font-weight: 400;
+  color: #777;
+}
+
+.placed-orders .box form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.placed-orders .box form .drop-down {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #777;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #777;
+  cursor: pointer;
+}
+
+.placed-orders .box form .drop-down option {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #777;
+}
+
+.placed-orders .box form .drop-down:focus {
+  border: 2px solid #777;
+}
+
+.placed-orders .box form .flex-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.placed-orders .box form .option-btn {
+  width: 48%;
+  padding: 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+  background: dodgerblue;
+  cursor: pointer;
+}
+
+.placed-orders .box form .delete-btn {
+  width: 48%;
+  padding: 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+  background: brown;
+  cursor: pointer;
+}
+
+.placed-orders .box form .delete-btn:hover {
+  background: #333;
+}
+
+.placed-orders .box form .option-btn:hover {
+  background: #333;
+}
+
+.user-accounts {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.user-accounts .title {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.user-accounts .box-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.user-accounts .box {
+  width: 300px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.user-accounts .box img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.user-accounts .box p {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.user-accounts .box p span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #555;
+}
+
+.user-accounts .box .delete-btn {
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #fff;
+  background: brown;
+  padding: 1.2rem auto;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.messages {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.messages .title {
+  font-size: 5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.messages .box-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.messages .box {
+  width: 300px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.messages .box p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.messages .box p span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #555;
+}
+
+.messages .box .delete-btn {
+  display: inline-block;
+  padding: 1.2rem auto;
+  background: brown;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.messages .box .delete-btn:hover {
+  background: #000;
+}
+
+.messages .empty {
+  font-size: 20px;
+  font-weight: 500;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .add-products form .flex .inputBox {
+    width: 100%;
+  }
+
+  #menu-btn {
+    display: inline-block;
+    transition: 0.2s linear;
+  }
+}
+
+@media (max-width: 650px) {
+  .add-products form .flex {
+    flex-direction: column;
+  }
+
+  .add-products form .flex .inputBox {
+    width: 100%;
+  }
+
+  .update-product form img {
+    height: auto;
+    width: 100%;
+  }
+
+  .placed-orders .box-container {
+    grid-template-columns: 1fr;
+  }
+
+  .user-accounts .box-container {
+    grid-template-columns: 1fr;
+  }
+
+  .messages .box-container {
+    grid-template-columns: 1fr;
+  }
+
+  .messages .box-container .box p {
+    font-size: 1.5rem;
+  }
+
+  .messages .box-container .box p span {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .dashboard .box-container .box {
+    width: 100%;
+  }
+
+  .show-products .box-container {
+    grid-template-columns: 1fr;
+  }
+
+  .add-products form .flex {
+    flex-direction: column;
+  }
+
+  .add-products form .flex .inputBox {
+    width: 100%;
+  }
+
+  .update-product form img {
+    height: auto;
+    width: 100%;
+  }
+
+  .placed-orders .box-container {
+    grid-template-columns: 1fr;
+  }
+
+  .user-accounts .box-container {
+    grid-template-columns: 1fr;
+  }
+
+  .messages .box-container {
+    grid-template-columns: 1fr;
+  }
+
+  .messages .box-container .box p {
+    font-size: 1.8rem;
+  }
+
+  .messages .box-container .box p span {
+    font-size: 1.8rem;
+  }
+
+  .messages .box {
+    width: 100%;
+  }
+
+  .show-products .box {
+    width: 100%;
+  }
+
+  .show-products .box img {
+    height: auto;
+  }
+}
